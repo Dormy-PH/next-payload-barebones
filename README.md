@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository is a barebones setup of [Next.js](https://nextjs.org/) and [Payload CMS](https://payloadcms.com/) that utilizes [Cloudinary](https://cloudinary.com/) as a cloud media storage.
 
 ## Getting Started
 
-First, run the development server:
+After you have configured your `.env.local` variables, create a database migration file by running `yarn payload migrate:create init` or the equivalent command using your desired package manager. Then, run `yarn payload migrate` to execute the migration file commands in your databse.
+
+Once you have your database setup, you should now be able to run the development server:
 
 ```bash
 npm run dev
