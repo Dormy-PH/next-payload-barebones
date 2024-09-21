@@ -5,7 +5,7 @@ import { slateEditor } from "@payloadcms/richtext-slate";
 import dotenv from "dotenv";
 import path from "path";
 import { buildConfig } from "payload/config";
-
+import cloudinaryPlugin from "payload-cloudinary-plugin/dist/plugins";
 import Education from "./collections/education";
 import Media from "./collections/media";
 import Profile from "./collections/profile";
@@ -28,7 +28,7 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
-  plugins: [payloadCloud()],
+  plugins: [cloudinaryPlugin()],
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI,

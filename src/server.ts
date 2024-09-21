@@ -2,6 +2,8 @@ import express from "express";
 import payload from "payload";
 import next from "next";
 import dotenv from "dotenv";
+import { mediaManagement } from "payload-cloudinary-plugin";
+
 dotenv.config();
 
 const dev = process.env.NODE_ENV !== "production";
@@ -10,7 +12,13 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(async () => {
   const server = express();
-
+  server.use(
+    mediaManagement({
+      cloud_name: process.env.CLOUDINARY_NAME,
+      api_key: process.env.CLOUDINARY_KEY,
+      api_secret: process.env.CLOUDINARY_SECRET,
+    })
+  );
   // Initialize Payload
   await payload.init({
     secret: process.env.PAYLOAD_SECRET as string,

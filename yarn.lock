@@ -1975,6 +1975,14 @@
     to-snake-case "1.0.0"
     uuid "9.0.0"
 
+"@payloadcms/plugin-cloud-storage@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud-storage/-/plugin-cloud-storage-1.1.3.tgz#15e6a421d7390b786fcdabbf1621f702d1252994"
+  integrity sha512-5YbCqnDnux2DR0RQwqgJAjvOybZ0GXst4h8L4eygozofELcDJKStyuaAAEv7JIA8EByDFr1DIxLSwmmQf0ytuw==
+  dependencies:
+    find-node-modules "^2.1.3"
+    range-parser "^1.2.1"
+
 "@payloadcms/plugin-cloud@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud/-/plugin-cloud-3.0.2.tgz#75ed7cc7fe8f5e1c056c59f7bf809bdabecf141b"
@@ -3733,6 +3741,14 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
+cloudinary@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/cloudinary/-/cloudinary-2.4.0.tgz#c7c6f7d233f5751252edfc28e0d47a73793a5cf6"
+  integrity sha512-5HA9VffeaR3MKiHpRo9A5SWgZFPxzlEDep0O4KzL3TIDi1hmQC9gjA4dHpVmdeFC0ZD1Xr5fGsWRKVDK9Ay9PQ==
+  dependencies:
+    lodash "^4.17.21"
+    q "^1.5.1"
+
 clsx@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
@@ -4343,7 +4359,7 @@ dotenv@8.6.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
-dotenv@^16.4.5:
+dotenv@^16.0.0, dotenv@^16.4.5:
   version "16.4.5"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
@@ -7362,7 +7378,16 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^2.28.0:
+payload-cloudinary-plugin@^0.1.14:
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/payload-cloudinary-plugin/-/payload-cloudinary-plugin-0.1.14.tgz#292a4e6ab48677ee2753b26e44bcadf459d94977"
+  integrity sha512-ch4BZDmQsn2JNsXk0FzDCZ3VK75Ugz7bMKvevdBzjevUI7j5TmWeDb8l/PLP1oJMgvtMXhyKFTcEeI6NCHMszw==
+  dependencies:
+    cloudinary "^2.4.0"
+    dotenv "^16.0.0"
+    payload "^2.27.0"
+
+payload@^2.27.0, payload@^2.28.0:
   version "2.28.0"
   resolved "https://registry.yarnpkg.com/payload/-/payload-2.28.0.tgz#b33b9edba187e97632a0314445e5bbe689987656"
   integrity sha512-DzSSUoG1pOiPQXSgoTqYar7naQ121kk6lRoxCPI6xQYv74z2hbGo4elgUSGLN6AHor0nU4egBenjaltZX82ELA==
@@ -8096,6 +8121,11 @@ punycode@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
+
+q@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+  integrity sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
 
 qs-middleware@1.0.3:
   version "1.0.3"

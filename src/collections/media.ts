@@ -1,15 +1,16 @@
 import { slateEditor } from "@payloadcms/richtext-slate";
-import path from "path";
 import type { CollectionConfig } from "payload/types";
 
 const Media: CollectionConfig = {
   slug: "media",
   upload: {
-    staticDir: path.resolve(__dirname, "../../media"),
+    staticURL: "/media",
+    disableLocalStorage: true,
   },
   access: {
     read: () => true,
   },
+
   fields: [
     {
       name: "alt",
