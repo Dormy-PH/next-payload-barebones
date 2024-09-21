@@ -1,6 +1,5 @@
 import { webpackBundler } from "@payloadcms/bundler-webpack";
 import { postgresAdapter } from "@payloadcms/db-postgres";
-import { payloadCloud } from "@payloadcms/plugin-cloud";
 import { slateEditor } from "@payloadcms/richtext-slate";
 import dotenv from "dotenv";
 import path from "path";

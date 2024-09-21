@@ -1,23 +1,27 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
+    "jsx": "preserve",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "isolatedModules": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
+      "react": ["./node_modules/@types/react"],
       "@/*": ["./src/*"]
     }
   },
@@ -26,7 +30,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/server.js"
+    "postcss.config.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": true
+  }
 }
