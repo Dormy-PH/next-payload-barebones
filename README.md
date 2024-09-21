@@ -2,7 +2,21 @@ This repository is a barebones setup of [Next.js](https://nextjs.org/) and [Payl
 
 ## Getting Started
 
-After you have configured your `.env.local` variables, create a database migration file by running `yarn payload migrate:create init` or the equivalent command using your desired package manager. Then, run `yarn payload migrate` to execute the migration file commands in your databse.
+After you have configured your `.env.local` variables, create a database migration file by running:
+
+```
+yarn payload migrate:create init
+```
+
+or the equivalent command using your desired package manager.
+
+Then, run:
+
+```
+yarn payload migrate
+```
+
+to execute the migration file commands in your databse.
 
 Once you have your database setup, you should now be able to run the development server:
 
