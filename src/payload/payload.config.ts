@@ -14,7 +14,7 @@ import Users from "./collections/users";
 import Work from "./collections/work";
 
 dotenv.config({
-  path: path.resolve(__dirname, "../.env.local"),
+  path: path.resolve(__dirname, "../../.env.local"),
 });
 
 export default buildConfig({
